@@ -4,9 +4,8 @@ export default function MyuseEffect(){
     const [count, setCount] = useState(0)
 
     useEffect(() => {
-        setCount(count + 1)
-        
-    }, [])//if you put count here It will give me infinte loop
+        setCount((prevCount) => prevCount + 1);
+    }, []);//if you put count here It will give me infinte loop
 
 
     return (

@@ -17,8 +17,7 @@ class Reactclass extends Component {
         this.setState({ example: null });
     };
     render() {
-        const { title, description } = this.props;
-
+        const { title } = this.props;
         return (
             <>
                 <h1>{this.state.example} - hahah Try to stop me:</h1>
