@@ -1,0 +1,50 @@
+.background {
+    margin: 20px 150px 130px 150px;
+    border: 2px solid black;
+    height: 95vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn {
+    margin-left: 12px;
+    width: 7rem;
+    height: 2rem;
+    background: rgba(255, 0, 0, 0.726);
+    border: 3px solid rgba(255, 0, 0, 0.747);
+}
+#btn:active{
+    background: rgba(255, 0, 0, 0.555);
+    border: 1px solid rgba(255, 0, 0, 0.575);
+}
+#btn:hover{
+    /* background: rgba(255, 0, 0, 0.699);
+    border: 1px solid rgba(255, 0, 0, 0.685); */
+    color:rgba(0, 0, 0, 0.692)
+}
+
+#inp {
+    padding-left:10px;
+    width: 15rem;
+    height: 25px;
+}
+
+.pgraph {
+    color: green;
+    font-size: 30px;
+}
+
+.list {
+    font-size: 20px;
+
+}
