@@ -1,14 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background-color: #f5f5f5; */
+    /* background-color: rgba(0, 0, 0, 0.877); */
+    min-height: 100vh;
+    position: relative;
+}
+
+#mynav {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    z-index: 10;
+    top: 0;
+    position: sticky;
+    background-color: #3498db;
+    height: 50px;
+    font-size: 30px;
+    color: #fff;
+    line-height: 50px;
+}
+
+#earth {
+    top: 0;
+    position: sticky;
+    margin-right: 42%;
+}
+
+
 .background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 20px 150px 130px 150px;
-    border: 2px solid black;
-    height: 95vh;
+    /* border: 2px solid black; */
+    min-height: calc(100vh - 160px);
 }
 
 .container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: rgba(234, 237, 238, 0.692);
+    box-shadow: 0px 3px 6px 4px rgba(0, 0, 0, 0.2);
+    width: 800px;
+    height: 160px;
+    margin-top: 10px;
 }
+
 
 #pdiv {
     display: flex;
@@ -17,34 +61,149 @@
 }
 
 #btn {
-    margin-left: 12px;
-    width: 7rem;
-    height: 2rem;
-    background: rgba(255, 0, 0, 0.726);
-    border: 3px solid rgba(255, 0, 0, 0.747);
+    margin-top: 10px;
+    width: 250px; /* Width badhaya */
+    height: 50px; /* Height badhaya */
+    background-color: #3498db;
+    border: none;
+    border-radius: 3px;
+    font-size: 24px;
+    text-align: center;
+    transition: background 0.3s, border 0.3s, transform 0.3s, color 0.3s;
+    background-color: 2s;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.877);
 }
-#btn:active{
+
+#btn:hover {
     background: rgba(255, 0, 0, 0.555);
-    border: 1px solid rgba(255, 0, 0, 0.575);
+    border: 1px solid rgba(255, 0, 0, 0.555);
+    color: rgba(255, 254, 254, 0.842);
 }
-#btn:hover{
-    /* background: rgba(255, 0, 0, 0.699);
-    border: 1px solid rgba(255, 0, 0, 0.685); */
-    color:rgba(0, 0, 0, 0.692)
+
+#btn:active {
+    background: rgba(255, 0, 0, 0.555);
+    border: none;
+    transform: scale(0.95);
+
 }
+
 
 #inp {
-    padding-left:10px;
-    width: 15rem;
-    height: 25px;
-}
-
-.pgraph {
-    color: green;
-    font-size: 30px;
-}
-
-.list {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 720px;
+    height: 50px;
     font-size: 20px;
-
+    text-align: center;
+    border: 1px solid rgba(20, 187, 216, 0.747);
+    transition: border 0.3s, box-shadow 0.3s;
 }
+
+#inp:focus {
+    /* border-color: #0c66ecbe; */
+    outline: none;
+    box-shadow: 0 0 5px 2px rgba(12, 102, 236, 0.192);
+}
+
+
+
+
+#myul {
+    background-color: #0000001a;
+    border-radius: 10px;
+    margin-top: 30px;
+    width: 760px;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    padding: 20px;
+    list-style-type: none;
+    /* WORD WRAP IS WORKING BUT IF YOU USE VERY LONG WORD IT WON'T WORK - LIKE - EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE */
+}
+
+
+#myul:empty {
+    background-color: transparent;
+}
+
+
+
+
+#footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+    position: sticky;
+}
+
+
+li {
+    margin-bottom: 10px;
+    color: #333;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    font-size: 23px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+
+.button-container {
+    margin-top: auto;
+}
+
+
+#del,
+#removeAll,
+#edit,
+#complete {
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    color: black;
+    background: rgba(0, 0, 0, 0.2);
+    border: none;
+    outline: none;
+    transition: transform 0.2s;
+    margin-left: 2px;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+#del:hover,
+#removeAll:hover,
+#edit:hover,
+#complete:hover {
+    background: rgba(0, 0, 0, 0.4);
+    transform: scale(1.1);
+}
+
+#del:active,
+#removeAll:active,
+#edit:active,
+#complete:active {
+    transform: scale(0.9);
+}
+
+#removeAll {
+    background: rgba(255, 0, 0, 0.555);
+    color: white;
+    width:100px;
+    font-size:22px;
+}
+
+.center {
+    text-align: center;
+}
+
+
