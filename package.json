@@ -1,8 +1,8 @@
 {
-  "homepage": "https://CrazyAshu34.github.io/todo-list-react",
   "name": "todo-list-react",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "private": true,
+  "homepage": "https://CrazyAshu34.github.io/TODO-LIST-REACT",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
